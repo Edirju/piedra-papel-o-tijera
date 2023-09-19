@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>JUEGO PIEDRA | PAPEL | TIJERA</title>
+    <link rel="stylesheet" href="./css/scripts.css">
+  </head>
+  <body>
+    
+    <header>
+      <p class="subtitle">Juego</p>
+      <h1 class="title">Piedra | Papel | Tijera</h1>
+      <p class="descripcion">[ HTML - CSS - JS ]</p>
+    </header>
+    <main>
+      <p class="instrucciones" id="instrucciones">Gana el primero que obtenga 5 puntos.</p>
+      <div class="marcador">
+        <p class="nombre nombre-jugador">Human</p>
+        <p class="nombre nombre-computadora">Laptop</p>
+        <p class="puntos">
+          <span class="puntos-usuario" id="puntos-usuario">0</span>
+          <span>-</span>
+          <span class="puntos-computadora" id="puntos-computadora">0</span>
+        </p>
+      </div>
+      <div class="elegi-tu-arma" id="elegi-tu-arma">
+        <h2>Elige tu opción para el próximo turno</h2>
+        <div class="armas">
+          <button class="arma" id="piedra🪨">🪨</button>
+          <button class="arma" id="papel📄">📄</button>
+          <button class="arma" id="tijera✂️">✂️</button>
+        </div>
+      </div>
+      <div class="mensaje disabled" id="mensaje">
+        <p>
+          Usaste <span class="eleccion" id="eleccion-usuario">papel📄</span> <br>
+          y la computadora usó <span class="eleccion" id="eleccion-computadora">piedra🪨</span>
+        </p>
+        <p class="gana-punto" id="gana-punto">🔥¡Has ganado un punto!🔥</p>
+      </div>
+      <button class="btn disabled" id="reiniciar">Juega otra vez</button>
+    </main>
+    <!-- Iconos Social Media -->
+    <footer class="footer">
+      <p>Sigueme</p>
+      <div class="icons">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-github"></i></a>
+      </div>
+    </footer>
+    
+    <script src="./js/main.js"></script>
+  </body>
+</html>
